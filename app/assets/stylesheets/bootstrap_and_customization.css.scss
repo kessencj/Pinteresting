@@ -1,6 +1,20 @@
-$body_bg:  		#c0392b;
-$navbar-inverse-bg:			#d35400;
-$navbar-inverse-link-color:  White;
-$jumbotron-bg:  #f39c12 ;
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(http://fonts.googleapis.com/css?family=Poiret+One);
+
+$body_bg:  										 #c0392b;
+$font-family-sans-serif:			'Poiret One', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$navbar-height:				  				45px;
+$navbar-inverse-bg:							#d35400;
+$navbar-inverse-link-color:  		White;
+$jumbotron-bg:  								White;
+
+
 @import 'bootstrap';
 
+.center {
+		text-align: center;
+}
+
+.navbar-brand {
+		font-weight: bold;
+}
