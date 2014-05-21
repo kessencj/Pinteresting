@@ -19,9 +19,15 @@
               Delete
             <% end %>
           </div>
-        <% end %>
+        <% end %>    
 
       </div>
+    </div>
   <% end %>
 </div>
+
+<div class="center">
+   <%= will_paginate @posts, renderer: BootstrapPagination::Rails %>
+</div>%>
+
 
