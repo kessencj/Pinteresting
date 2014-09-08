@@ -1,0 +1,44 @@
+// Place all the styles related to the pins controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+<link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+				<style type="text/css">
+					#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+					</style>
+
+#pins {
+	margin: 0 auto;
+}
+
+.box {
+	margin: 5px;
+	width: 214px;
+}
+
+.box img {
+	width: 100%;
+}
+
+.center {
+		text-align: center;
+}
+
+.navbar-brand {
+		font-weight: bold;
+}
+
+.homepagebio {
+	margin: 30px;
+		font-family:"Oswald" !important; 
+		font-size: 18px !important;
+		color: grey !important;
+}
+
+.jumbobackground {
+		background-image: url("tree_bark.png");
+}
+
+li {
+	list-style-type: none;
+}
