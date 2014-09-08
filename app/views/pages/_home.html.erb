@@ -1,9 +1,47 @@
-<div class="jumbotron center"
-	<h1>Welcome to My App!</h1>
-		<p>
-			<%= link_to "Log in" , new_user_session_path, class: "btn btn-default btn-lg" %>
-			<%= link_to "Sign Up" , new_user_registration_path, class: "btn btn-danger btn-lg" %>
+<div style="color: black; font-size: 100px" class="jumbotron center jumbotron center-lg jumbobackground";>
+	<div class="container"
+	<h1>ART'S FISHING CLUB</h1>
+		<p class="homepagebio"> Art's Fishing Club is made up of three Wisconsin-born cousins: Christopher Kessenich, Ben Anholzer, and Keenan Kelley. The folk-rock trio dabbles in many genres to produce an intriguing blend that will rumble your balls one moment and tickle your heartstrings the next... 
 		</p>
+	
 
-<button type="button" class="btn btn-danger btn-lg">
-<span class="glyphicon glyphicon-fire"></span> Torch It! </button>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal">
+ 	<span class="glyphicon glyphicon-headphones"></span> Join the Club
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Subscribe to our mailing list!</h4>
+      </div>
+      <div class="modal-body">
+        
+				<!-- Begin MailChimp Signup Form -->
+
+<link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+				<style type="text/css">
+					#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+					</style>
+				
+				<div id="mc_embed_signup">
+				<form action="//artsfishingclub.us9.list-manage.com/subscribe/post?u=84f920477a61565c6cfbec041&amp;id=e7dc15aabb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+					<input style="position: middle" type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+				    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+				    <div style="position: absolute; left: -5000px;"><input type="text" name="b_84f920477a61565c6cfbec041_e7dc15aabb" tabindex="-1" value=""></div>
+				    <div class="clear"><input type="submit" value="Get Fish'n" name="gone fish'n" id="mc-embedded-subscribe" class="btn btn-danger btn-lg"></div>
+				</form>
+				</div>
+				<!--End mc_embed_signup-->
+
+      </div>
+    </div>
+  </div>
+</div>
+	</div>
+</div> 
+

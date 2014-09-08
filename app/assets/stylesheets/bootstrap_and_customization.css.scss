@@ -1,20 +1,24 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
-@import url(http://fonts.googleapis.com/css?family=Poiret+One);
+// @import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+// @import url(http://fonts.googleapis.com/css?family=Poiret+One);
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700,300);
 
-$body_bg:  										 #c0392b;
-$font-family-sans-serif:			'Poiret One', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family-sans-serif:			'Oswald', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $navbar-height:				  				45px;
 $navbar-inverse-bg:							#d35400;
-$navbar-inverse-link-color:  		White;
 $jumbotron-bg:  								White;
 
 
 @import 'bootstrap';
 
-.center {
-		text-align: center;
+body {
+	background-image: url("stardust.png");
 }
 
-.navbar-brand {
-		font-weight: bold;
+.navbar-inner {
+    background:transparent;
+
+}
+
+.navbar-text {
+	a {color: red !important;}
 }
