@@ -3,9 +3,9 @@
 // @import url(http://fonts.googleapis.com/css?family=Oswald:400,700,300);
 
 $font-family-sans-serif:			'Oswald', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$navbar-height:				  				45px;
+$navbar-height:				  				35px;
 $navbar-inverse-bg:							#d35400;
-$jumbotron-bg:  								White;
+$jumbotron-bg:  								white;
 
 
 @import 'bootstrap';
@@ -14,11 +14,8 @@ body {
 	background-image: url("stardust.png");
 }
 
-.navbar-inner {
-    background:transparent;
-
-}
 
 .navbar-text {
-	a {color: red !important;}
+	a {color: white;}
 }
+

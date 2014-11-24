@@ -1,13 +1,28 @@
 Rails.application.routes.draw do
-  resources :pins
 
-  devise_for :users
-  root "pins#index"
+ 
+
+  # devise_for :users
+  root "pages#home"
   get "about" => "pages#about" # creates about_path
   get "tunes" => "pages#tunes" # creates tunes_path
   get "photographs" => "pages#photographs" # creates photographs_path
-  get "dates" => "pages#dates" # creates tunes_path
-  
+  get "dates" => "pages#dates" # creates dates_path
+  get "blog_posts/new" => "blog_posts#new" #creates route in address bar to lead to the blog creation page
+  post "create" => "blog_posts#create" #creates new route for the database
+  get "blog_posts/index" => "blog_posts#index", :as => 'blog_index'
+  get "blog_posts/edit/:id" => "blog_posts#edit", :as => 'edit_blog_post' #creates route to edit blogposts
+  get "blog_posts/:id" => "blog_posts#show", :as => 'blog_post' #Creates a route to the show page that is equal to the blogpost with id number
+  delete "blog_posts/:id" => "blog_posts#destroy" #creates delete path
+
+ resources :blog_posts do
+    resources :comments
+  end
+
+  # resources :blog_posts
+
+  # match "about/:code", :to => "pages#about", :as => "about"
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

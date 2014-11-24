@@ -1,0 +1,14 @@
+<p>
+  <strong>Text:</strong>
+  <%= @blog.description %>
+</p>
+
+<h4>Comments</h4>
+<%= render @blog.comments %>
+
+<h4>Add a comment:</h4>
+<%= render "comments/form" %>
+
+
+<%= link_to 'Back', controller: 'blog_posts' %>
+	<%= link_to 'Edit', edit_blog_post_path(@blog) %>

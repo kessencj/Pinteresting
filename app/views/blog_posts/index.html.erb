@@ -1,0 +1,19 @@
+<div> 
+	<table style="margin-left: 15%; margin-right: 15%; margin-top: 5%">
+	  
+	 
+	  <% @allblogposts.each do |article| %>
+	    <tr colspan="3" class="top bottom left right" style="text-align: center; background: white;">
+	      <td colspan="3" style="color: black; font-size: 17px"><%= article.description %></td>
+	    </tr>
+	    <tr style="text-align: center">
+	     <td ><%= link_to 'Comment  -   ', blog_post_path(article) %>
+	      <%= link_to 'Edit   -   ', edit_blog_post_path(article) %>
+	      <%= link_to 'Destroy', blog_post_path(article),
+                    method: :delete, data: { confirm: 'Are you sure?' } %></td>
+	    </tr>
+	  <% end %>
+	</table>
+</div>
+
+<%= link_to 'Back', controller: 'blog_posts' %>

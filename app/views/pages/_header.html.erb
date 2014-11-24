@@ -1,0 +1,32 @@
+
+  <div class="afctitle"><%= link_to "Arts Fishing Club", root_path, :class => "titleformat" %></div>
+    <p class="homepagebio"> Art's Fishing Club is made up of three Wisconsin-born cousins: Christopher Kessenich, Ben Anholzer, and Keenan Kelley. The folk-rock trio dabbles in many genres to produce an intriguing blend that will rumble your balls one moment and tickle your heartstrings the next... 
+    </p>
+  
+<nav class="navp navbar-static-top navbar-inner" role="navigation">
+  <div class="container-fluid navbar-john">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="navbar-nav navbar-justified navcenterclass">
+        
+        <li class="navbar-text"><%= link_to "Blog", controller: 'blog_posts' %></li>
+        <li class="navbar-text"><%= link_to "Tunes", tunes_path %></li>
+        <li class="navbar-text"><%= link_to "Dates", dates_path %></li>
+        <li class="navbar-text"><%= link_to "About", about_path %></li>
+
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+
